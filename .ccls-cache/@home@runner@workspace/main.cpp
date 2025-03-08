@@ -9,4 +9,14 @@ const double sugar = 1.5;
   const int cookies = 48;
 
   // Ask user for number of cookies to make
+  int numCookies;
+  cout << "How many cookies do you want to make? " << endl;
+  cin >> numCookies;
+  // Calculate the amount of ingredients needed to make the number of cookies entered by the user
+  double sugarNeeded = (sugar*numCookies)/cookies;
+  double butterNeeded = (butter*numCookies)/cookies;
+  double flourNeeded = (flour*numCookies)/cookies;
+  
+  
+    
   
