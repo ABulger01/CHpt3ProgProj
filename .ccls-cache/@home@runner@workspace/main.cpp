@@ -16,6 +16,15 @@ const double sugar = 1.5;
   double sugarNeeded = (sugar*numCookies)/cookies;
   double butterNeeded = (butter*numCookies)/cookies;
   double flourNeeded = (flour*numCookies)/cookies;
+  // Display the amount of ingredients needed to make the number of cookies entered by the user
+  cout << "To make " << numCookies << " cookies, you will need;" << endl;
+  cout << sugarNeeded << "  cups of sugar" << endl;
+  cout << butterNeeded << " cups of butter" << endl;
+  cout << flourNeeded << " cups of flour" << endl;
+
+  return 0;
+}
+  
   
   
     
