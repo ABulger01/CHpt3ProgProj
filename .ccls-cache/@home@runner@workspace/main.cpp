@@ -3,19 +3,30 @@
 using namespace std;
 
 int main() {
-  // Step 1: Generate a random number between 100 and 999
+  // Step 1: Generate two random numbers between 100 and 999
   std::random_device rd;
   std::mt19937 gen(rd());
   std::uniform_int_distribution<> dis (100,999);
   int randomNumber = dis(gen);
-// Step 2: print the random number to the console
-  cout << "Random number: " << randomNumber <<endl;
-  int randomNumber1 = randomNumber / 100;
+  int randomNumber2 = dis(gen);
+  // Step 2: DIsplay the two random numbers to the user
+  cout << "Random Number 1: " << randomNumber << endl;
+  cout << "Random Number 2: " << randomNumber2 << endl;
+  // Step 3: Ask the user to enter the addition of the two numbers
+  cout << randomNumber << " + " << randomNumber2 << " = ? " << endl;
+  // Step 4: Pause the program and wait for the user to enter the answer
+  int userAnswer;
+  cin >> userAnswer;
+  cin.get();
   
+// Step 4: pause to allow the user to enter the answer
+  cout << "Press Enter when you are ready to check your answer" << endl;
+  cin.get(); // wait for the user to press enter
   
-  // Act as a math tutor for a young student
-cout << "Welcome to the Simple Math Tutor" << endl;
-// Give the user a random math problem
-  srand (time(0));
-  
+  // Step 5: Display the correct answer to the user
+  cout << "The correct answer is: " << randomNumber + randomNumber2 << endl;
+  return 0;
 }
+
+  
+
