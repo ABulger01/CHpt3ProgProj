@@ -1,3 +1,7 @@
 #include <iostream>
+using namespace std;
 
-int main() { std::cout << " Chapter 3 Programing Project\n"; }
+int main()  { 
+//  Define default ingredients to make 48 cookies per batch
+
+  const double cupsof
